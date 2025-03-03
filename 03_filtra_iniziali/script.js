@@ -28,6 +28,12 @@ const searchInitialsHarrow = (names, filter) => {
     return namesFiltered;
 }
 
+function searchInitialsFilter(names, filter) {
+    const filterUpperCase = filter.toUpperCase();
+    return names.filter(name => name[0].toUpperCase() === filterUpperCase);
+}
+
+
 
 // Invoca la funzione qui e stampa il risultato in console
 
