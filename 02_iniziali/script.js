@@ -23,6 +23,9 @@ const lookForInitialsHarrow = names => {
     return initials;
 }
 
+function lookForInitialsMap(names) {
+    return names.map(name => name[0]);
+}
 
 
 // Invoca la funzione qui e stampa il risultato in console
