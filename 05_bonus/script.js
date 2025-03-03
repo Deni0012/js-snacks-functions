@@ -27,6 +27,10 @@ function greetingBasedOnTime(name, hour) {
 
 
 // Invoca la funzione qui e stampa il risultato in console
+const hour = pickHour();
+console.log(hour)
+const greetingMario = greetingBasedOnTime(name, hour);
+console.log(greetingMario)
 
 
 
