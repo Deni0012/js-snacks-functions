@@ -16,6 +16,17 @@ function searchInitials(names, filter) {
     return namesFiltered;
 }
 
+const searchInitialsHarrow = (names, filter) => {
+    const namesFiltered = [];
+    const filterUpperCase = filter.toUpperCase();
+    for (let i = 0; i < names.length; i++) {
+        const name = names[i];
+        if (name[0].toUpperCase() === filterUpperCase) {
+            namesFiltered.push(name);
+        }
+    }
+    return namesFiltered;
+}
 
 
 // Invoca la funzione qui e stampa il risultato in console
