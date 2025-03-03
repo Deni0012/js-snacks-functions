@@ -4,6 +4,18 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
+function searchInitials(names, filter) {
+    const namesFiltered = [];
+    const filterUpperCase = filter.toUpperCase();
+    for (let i = 0; i < names.length; i++) {
+        const name = names[i];
+        if (name[0].toUpperCase() === filterUpperCase) {
+            namesFiltered.push(name);
+        }
+    }
+    return namesFiltered;
+}
+
 
 
 // Invoca la funzione qui e stampa il risultato in console
