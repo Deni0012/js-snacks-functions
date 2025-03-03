@@ -12,8 +12,11 @@ function greeting2(userName) {
 }
 
 
-
 // Invoca la funzione qui e stampa il risultato in console
+
+greeting1(userName);
+const ciaoMario = greeting2(userName);
+console.log(ciaoMario)
 
 
 
