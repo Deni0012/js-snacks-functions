@@ -9,6 +9,10 @@ const name = 'Mario';
 
 
 // Dichiara la funzione qui.
+function pickHour() {
+    const now = new Date();
+    return now.getHours();
+}
 
 
 // Invoca la funzione qui e stampa il risultato in console
