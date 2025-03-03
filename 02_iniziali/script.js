@@ -14,6 +14,16 @@ function lookForInitials(names) {
     return initials;
 }
 
+const lookForInitialsHarrow = names => {
+    const initials = [];
+    for (let i = 0; i < names.length; i++) {
+        const name = names[i];
+        initials.push(name[0]);
+    }
+    return initials;
+}
+
+
 
 // Invoca la funzione qui e stampa il risultato in console
 
