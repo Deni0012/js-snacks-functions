@@ -16,6 +16,27 @@ function countVowels(word) {
     return numberOfVowels;
 }
 
+const countVowelsHarrow = word => {
+    let numberOfVowels = 0;
+    let vowels = [];
+    for (let i = 0; i < word.length; i++) {
+        const letter = word[i].toLowerCase();
+        const isA = letter === "a";
+        const isE = letter === "e";
+        const isI = letter === "i";
+        const isO = letter === "o";
+        const isU = letter === "u";
+        const isVowels = isA || isE || isI || isO || isU;
+
+        if (isVowels) {
+            numberOfVowels++;
+            vowels.push(letter);
+        }
+    }
+    return [numberOfVowels, vowels];
+}
+
+
 
 // Invoca la funzione qui e stampa il risultato in console
 
