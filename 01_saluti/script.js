@@ -4,6 +4,13 @@ const userName = 'Mario';
 
 
 // Dichiara la funzione qui.
+const greeting1 = userName => console.log(`Ciao ${userName}`);
+
+function greeting2(userName) {
+    const hello = "Ciao";
+    return hello + " " + userName;
+}
+
 
 
 // Invoca la funzione qui e stampa il risultato in console
