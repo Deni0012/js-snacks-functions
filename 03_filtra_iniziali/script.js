@@ -36,6 +36,8 @@ function searchInitialsFilter(names, filter) {
 
 
 // Invoca la funzione qui e stampa il risultato in console
+const namesWhitA = searchInitials(names, "a");
+console.log(namesWhitA);
 
 
 
