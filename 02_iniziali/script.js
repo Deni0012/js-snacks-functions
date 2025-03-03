@@ -30,6 +30,14 @@ function lookForInitialsMap(names) {
 
 // Invoca la funzione qui e stampa il risultato in console
 
+const namesInitialis = lookForInitials(names);
+console.log(namesInitialis)
+
+const namesInitialisHarrow = lookForInitialsHarrow(names);
+console.log(namesInitialisHarrow)
+
+const namesInitialisMap = lookForInitialsMap(names);
+console.log(namesInitialisMap)
 
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
